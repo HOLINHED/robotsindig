@@ -5,7 +5,6 @@ function map(num, in_min, in_max, out_min, out_max) {
 }
 
 var a = 0;
-misty.LinearVelocity(100);
 
 function doStuff() {
 
@@ -14,7 +13,7 @@ function doStuff() {
    var s = Math.sin(a);
    var ms = map(s,-1,1,-100,100);
 
-   misty.AngularVelocity(ms);
+   misty.DriveTime(100, ms, 250);
 
    doStuff();
 };
