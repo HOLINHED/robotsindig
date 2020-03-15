@@ -8,12 +8,12 @@ var a = 0;
 
 function doStuff() {
 
-   a += Math.PI / 10;
+   a += Math.PI;
 
    var s = Math.sin(a);
    var ms = map(s,-1,1,-100,100);
 
-   misty.DriveTime(100, ms, 250);
+   misty.DriveTime(100, ms, 500);
 
    doStuff();
 };
